@@ -1,11 +1,11 @@
 <?php
 // Lav en mysqlforbindelse
-$dbconnection = mysql_connect("localhost", "loot", "kina");
+$dbconnection = mysql_connect("localhost", "***", "***");
 if(!$dbconnection) {
 	die("Databaseforbindelse fejlede: " . mysql_error());
 }
 // Vælg en database-tabel til brug
-$db_select = mysql_select_db("blog-database",$dbconnection);
+$db_select = mysql_select_db("***",$dbconnection);
 if (!$db_select) {
 	die("database-tabel fejlede: " . mysql_error());
 }
