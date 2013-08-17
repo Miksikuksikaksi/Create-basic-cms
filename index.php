@@ -31,20 +31,7 @@ if (!$db_select) {
 	
 	<section>
 	<?php 
-		 // Forbind til tabel
-		 $data = mysql_query("SELECT * FROM posts") 
-		 or die(mysql_error()); 
-		 
-		 // hent posts så længe der er nogen
-		 while($info = mysql_fetch_array( $data )) 
-		 { 
-		 Print "<div class='mh-post'>"; 
-		 Print "<h3 class='mh-entry-title'><a href='single.php?id=" . $info['id']. "'>".$info['titel'] . "</a></h3>";
-		 Print "<span class='mh-entry-author'><a href='#' title='Posts by michael' rel='author'>".$info['forfatter'] . "</a></span> "; 
-		 Print "<span class='mh-entry-date'>".$info['dato'] . " </span>"; 
-		 Print "<div class='mh-entry-content'><p>".$info['txt'] . "<p></div>"; 
-		 Print "</div>";
-		 }
+		 // Indsæt her jeres kode fra snippet.txt
 	?> 
 	</section>
 
